@@ -1,10 +1,11 @@
-
-using Data;
-using Data.Repositories;
+using Application.Abstractions;
+using Application.Services;
+using Domain.Abstractions;
+using Infrastructure;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
 
-namespace LiaisonTechInterview
+namespace WebAPI
 {
     public class Program
     {
@@ -20,6 +21,7 @@ namespace LiaisonTechInterview
             //builder.Services.AddDbContext<LiaisonDBContext>(opt => opt.UseInMemoryDatabase("LiaisonTechInterview"));
 
             builder.Services.AddScoped<IWeatherForecastsRepository, WeatherForecastsRepository>();
+            builder.Services.AddScoped<IWeatherForecastsService, WeatherForecastService>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

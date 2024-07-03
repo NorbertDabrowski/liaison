@@ -1,6 +1,6 @@
-﻿using Data.Models;
+﻿using Domain.Entities;
 
-namespace Data.Repositories
+namespace Domain.Abstractions
 {
     public interface IWeatherForecastsRepository
     {

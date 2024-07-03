@@ -1,9 +1,9 @@
-namespace Data.Models
-{
-    public class WeatherForecastEntity
-    {
-        public Guid Id { get; set; }
+using Domain.Primitives;
 
+namespace Domain.Entities
+{
+    public class WeatherForecastEntity : Entity
+    {
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }

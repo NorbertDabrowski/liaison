@@ -1,7 +1,7 @@
-﻿using Data.Models;
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data
+namespace Infrastructure
 {
 
     public class LiaisonDBContext : DbContext

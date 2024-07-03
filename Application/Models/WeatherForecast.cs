@@ -1,4 +1,4 @@
-namespace LiaisonTechInterview
+namespace Application.Models
 {
     public class WeatherForecast
     {
